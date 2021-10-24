@@ -6,7 +6,7 @@ This is a single-header library. You must include this file alongside `#define M
 
 You can then include `mem.h` in other files for the function declarations.
 
-## Additional control defines:
+## Additional control defines
 Define | Function
 --------|--------
 `MEM_STAT` | This will enable the Mem_GetStat function which returns information about available memory in the heap.
