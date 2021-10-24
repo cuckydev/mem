@@ -19,7 +19,7 @@
 #define MEM_ALIGN(x) (((size_t)(x) + 0xF) & ~0xF)
 
 //Function declarations
-u8 Mem_Init(void *ptr, size_t size);
+int Mem_Init(void *ptr, size_t size);
 void *Mem_Alloc(size_t size);
 void Mem_Free(void *ptr);
 #ifdef MEM_STAT
@@ -41,7 +41,7 @@ static Mem_Header *mem = NULL;
 	static size_t mem_used, mem_max;
 #endif
 
-u8 Mem_Init(void *ptr, size_t size)
+int Mem_Init(void *ptr, size_t size)
 {
 	//Make sure there's enough space for mem header
 	if (ptr == NULL || size < MEM_HEDSIZE)
