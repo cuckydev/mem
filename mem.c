@@ -1,6 +1,6 @@
 /*
 	"mem" by Regan "CuckyDev" Green
-	A tiny portable C memory allocator
+	A tiny portable C89 memory allocator
 	This source form is released to the public domain
 */
 
