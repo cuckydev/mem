@@ -9,6 +9,9 @@
 
 #include <stddef.h>
 
+#define MEM_ALIGNSIZE 0x10
+#define MEM_ALIGN(x) (((size_t)(x) + 0xF) & ~0xF)
+
 //#define MEM_STAT (Enables functionality that exposes some memory statistics)
 
 u8 Mem_Init(void *ptr, size_t size);
