@@ -172,8 +172,6 @@ void Mem_Free(void *ptr)
 #endif /* MEM_IMPLEMENTATION_GUARD */
 #endif /* MEM_IMPLEMENTATION */
 
-#endif /* MEM_GUARD_MEM_H */
-
 /*
 This software is available under 2 licenses -- choose whichever you prefer.
 ------------------------------------------------------------------------------
