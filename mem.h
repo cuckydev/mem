@@ -26,8 +26,13 @@ void Mem_Free(void *ptr);
 	void Mem_GetStat(size_t *used, size_t *size, size_t *max);
 #endif
 
+#endif /* MEM_GUARD_MEM_H */
+
 /* Implementation */
 #ifdef MEM_IMPLEMENTATION
+
+#ifndef MEM_IMPLEMENTATION_GUARD
+#define MEM_IMPLEMENTATION_GUARD
 
 typedef struct Mem_Header
 {
@@ -162,6 +167,5 @@ void Mem_Free(void *ptr)
 	}
 #endif
 
+#endif /* MEM_IMPLEMENTATION_GUARD */
 #endif /* MEM_IMPLEMENTATION */
-
-#endif /* MEM_GUARD_MEM_H */
